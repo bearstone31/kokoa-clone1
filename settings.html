@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings • Kokoa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+
+  <div class="statusbar">
+    <span>No service</span>
+    <span class="mono">18:43</span>
+    <div class="right"><span class="mono">110%</span><span class="icon-battery"></span></div>
+  </div>
+
+  <div class="topbar">
+    <a class="btn" href="index.html" aria-label="Back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </a>
+    <div class="title">Settings</div>
+    <div class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+  </div>
+
+  <div class="list">
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#ffebe4; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#ff6b4a" d="M3 11h18v2H3z"/></svg>
+      </div>
+      <div class="meta"><div class="name">Notices</div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#e8f3ff; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#3b82f6" d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"/></svg>
+      </div>
+      <div class="meta"><div class="name">Kokoa Lab</div></div>
+      <div class="trailing">Latest Version</div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#eef2f7; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="#64748b"/></svg>
+      </div>
+      <div class="meta"><div class="name">Privacy</div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#fff3d6; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 22V12" stroke="#f59e0b" stroke-width="2"/><circle cx="12" cy="8" r="4" fill="#f59e0b"/></svg>
+      </div>
+      <div class="meta"><div class="name">Notifications</div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#eafaf1; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#22c55e" d="M12 12c2.8 0 5-2.2 5-5S14.8 2 12 2 7 4.2 7 7s2.2 5 5 5zM4 22c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <div class="meta"><div class="name">Friends</div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#e7f5ff; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#0ea5e9" d="M4 6h16v10H5.2L4 18z"/></svg>
+      </div>
+      <div class="meta"><div class="name">Chats</div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#f0f9ff; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#06b6d4" d="M12 2l4 8H8l4-8zm0 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/></svg>
+      </div>
+      <div class="meta"><div class="name">Display <span style="color:#ff6b4a; font-weight:700; margin-left:6px;">N</span></div></div>
+    </div>
+
+    <div class="item">
+      <div class="avatar" style="width:28px; height:28px; border-radius:8px; background:#fef3f2; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#ef4444" d="M4 20h16l-4-12H8z"/></svg>
+      </div>
+      <div class="meta"><div class="name">Theme <span style="color:#ff6b4a; font-weight:700; margin-left:6px;">N</span></div></div>
+      <div class="trailing">Default theme</div>
+    </div>
+  </div>
+
+  <nav class="tabbar">
+    <a class="tab" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg>
+      <div>Friends</div>
+    </a>
+    <a class="tab" href="chats.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20l3-3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3z"/></svg>
+      <div>Chats</div>
+    </a>
+    <a class="tab active" href="settings.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82"/></svg>
+      <div>Settings</div>
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>
