@@ -1,13 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Friends • Kokoa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-asdf
-g 
+<div class="app">
+
+  <div class="statusbar">
+    <span>No Service</span>
+    <span class="mono">13:25</span>
+    <div class="right">
+      <span class="mono">-92%</span>
+      <span class="icon-battery"></span>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <div class="title">Friends' Names Display</div>
+    <div class="btn" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#333" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-size="14" fill="#333">i</text></svg>
+    </div>
+  </div>
+
+  <!-- 내 프로필 -->
+  <div class="list">
+    <div class="item">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300" alt="Lee Sin">
+      </div>
+      <div class="meta">
+        <div class="name">Lee Sin</div>
+        <div class="sub">어디로 가야하오...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-h">
+    <span>Friends</span>
+    <span>⌄</span>
+  </div>
+
+  <div class="list">
+    <div class="item">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300" alt="Garen">
+      </div>
+      <div class="meta">
+        <div class="name">Garen</div>
+        <div class="sub">내 검과 심장은 데마시아의 것이다!</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300" alt="Lux">
+      </div>
+      <div class="meta">
+        <div class="name">Lux</div>
+        <div class="sub">빛으로 강타해요!</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1547106634-56dcd53ae883?q=80&w=300" alt="Jinx">
+      </div>
+      <div class="meta">
+        <div class="name">Jinx</div>
+        <div class="sub">쎄냐 놀아볼까~~~?</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1549049950-48d5887197a4?q=80&w=300" alt="Yumi">
+      </div>
+      <div class="meta">
+        <div class="name">Yumi</div>
+        <div class="sub">Meow....</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-h">
+    <span>Channel</span>
+    <span>⌄</span>
+  </div>
+
+  <div class="list">
+    <a class="item" href="chats.html" style="text-decoration:none; color:inherit;">
+      <div class="avatar" style="border-radius:12px;">
+        <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d4a2?q=80&w=300" alt="LoL">
+      </div>
+      <div class="meta">
+        <div class="name">Channel</div>
+        <div class="sub">새 소식이 있어요</div>
+      </div>
+      <div class="trailing mono">0</div>
+    </a>
+  </div>
+
+  <nav class="tabbar">
+    <a class="tab active" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/></svg>
+      <div>Friends</div>
+    </a>
+    <a class="tab" href="chats.html">
+      <span class="badge">5</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20l3-3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3z"/></svg>
+      <div>Chats</div>
+    </a>
+    <a class="tab" href="settings.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V22a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 5 15.4a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.49A1.65 1.65 0 0 0 5 8.9 1.65 1.65 0 0 0 4.67 7.1l-.06-.06A2 2 0 1 1 7.44 4.2l.06.06A1.65 1.65 0 0 0 9.3 4a1.65 1.65 0 0 0 1-1.51V2a2 2 0 1 1 4 0v.49A1.65 1.65 0 0 0 15.3 4a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 20 8.7c0 .58.22 1.14.6 1.57.39.44.6 1 .6 1.57 0 .58-.22 1.14-.6 1.57-.38.43-.6.99-.6 1.57z"/></svg>
+      <div>Settings</div>
+    </a>
+  </nav>
+
+</div>
 </body>
 </html>
